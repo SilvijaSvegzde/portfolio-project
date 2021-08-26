@@ -19,6 +19,7 @@ nav {
   flex-direction: column;
   list-style: none;
   width: 100%;
+  font-family: var(--primary-font);
 }
 
 .social-list {
@@ -54,12 +55,15 @@ section {
   opacity: 0.8;
 }
 
-#banner {
+.bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url(/images/IMG_9310.jpg);
+    url(/images/large-image.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  height: 800px;
+  background-attachment: fixed;
+  background-color: #464646;
+  padding-bottom: 250px;
 }
 
 .btn {
@@ -117,6 +121,17 @@ h4 {
   background: #eee;
 }
 
+.arrow {
+  text-align: center;
+  font-size: 70px;
+  color: var(--secondary-color);
+}
+
+.arrow:hover {
+  color: var(--secondary-color);
+  opacity: 0.9;
+}
+
 .text-center {
   text-align: center;
 }
@@ -162,7 +177,7 @@ h4 {
   color: var(--secondary-color);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   h1 {
     font-size: 55px;
   }
@@ -172,9 +187,12 @@ h4 {
   h3 {
     font-size: 35px;
   }
+  .bg-image {
+    background-attachment: scroll;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   h1 {
     font-size: 30px;
   }
@@ -195,5 +213,13 @@ h4 {
 
   .email-link {
     font-size: 10px;
+  }
+  .bg-image {
+    background-attachment: scroll;
+  }
+  .greeting {
+    position: relative;
+    top: 150px;
+    width: 330px;
   }
 }
