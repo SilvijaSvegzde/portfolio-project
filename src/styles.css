@@ -1,6 +1,6 @@
 :root {
   --primary-color: #141010;
-  --secondary-color: #ef613e;
+  --secondary-color: #ef7152;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font: "Russo One", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -73,15 +73,15 @@ section {
 
 .btn-warning {
   color: #fff;
-  border-color: #fb6340;
-  background-color: #fb6340;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
 }
 
 .btn-warning:hover {
   color: #fff;
-  border-color: #fb6340;
-  background-color: #fb6340;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
   opacity: 0.9;
 }
 
@@ -155,6 +155,7 @@ h4 {
 
 .icon {
   color: var(--primary-color);
+  font-size: x-large;
 }
 
 .icon:hover {
