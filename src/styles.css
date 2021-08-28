@@ -112,7 +112,7 @@ h4 {
 .arrow {
   margin-top: 20px;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   color: var(--secondary-color);
 }
 
@@ -173,13 +173,23 @@ h4 {
   color: var(--secondary-color);
 }
 
-.icon {
-  color: var(--secondary-color);
-  font-size: x-large;
+.icon-navbar {
+  font-size: 20px;
+  height: 20px;
 }
 
-.icon:hover {
+.icon-footer {
   color: var(--secondary-color);
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.icon-footer:hover {
+  color: white;
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 1024px) {
