@@ -22,19 +22,18 @@ nav {
   font-family: var(--primary-font);
 }
 
-.social-list {
+.list-inline {
   display: flex;
 }
 
 .list-inline {
-  padding-left: 0;
+  padding-left: 20px;
   list-style: none;
 }
 
 .list-inline-item {
   display: inline-block;
   padding-right: 10px;
-  color: var(--primary-color);
 }
 
 .navbar-toggler-icon {
@@ -43,14 +42,10 @@ nav {
   background-position: center;
 }
 
-section {
+section,
+footer {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.text-white {
-  color: white;
-  opacity: 0.8;
 }
 
 .bg-image {
@@ -66,34 +61,7 @@ section {
 
 .greeting {
   position: relative;
-  top: 50px;
-}
-
-.btn {
-  font-size: 0.875rem;
-  position: relative;
-  transition: all 0.15s ease;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  will-change: transform;
-}
-
-.btn-warning {
-  color: #fff;
-  border-color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
-}
-
-.btn-warning:hover {
-  color: #fff;
-  border-color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  opacity: 0.9;
-}
-
-.text-orange {
-  color: var(--secondary-color);
+  top: 20px;
 }
 
 h1 {
@@ -118,8 +86,46 @@ h4 {
   font-weight: bold;
 }
 
-.center-image {
+.btn {
+  font-size: 14px;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  will-change: transform;
+  box-shadow: var(--box-shadow);
+}
+
+.btn-warning {
+  color: #fff;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.btn-warning:hover {
+  color: #fff;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+}
+
+.arrow {
+  margin-top: 20px;
   text-align: center;
+  font-size: 70px;
+  color: var(--secondary-color);
+}
+
+.arrow:hover {
+  color: var(--secondary-color);
+  opacity: 0.9;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
 }
 
 .img-thumbnail {
@@ -129,15 +135,13 @@ h4 {
   width: 400px;
 }
 
-.arrow {
-  text-align: center;
-  font-size: 70px;
-  color: var(--secondary-color);
+.text-white {
+  color: white;
+  opacity: 0.8;
 }
 
-.arrow:hover {
+.text-orange {
   color: var(--secondary-color);
-  opacity: 0.9;
 }
 
 .text-center {
@@ -150,13 +154,6 @@ h4 {
 
 .bg-grey {
   background: linear-gradient(87deg, #f4f5f7 0, #f4f4f7 100%) !important;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
 }
 
 #contact {
@@ -177,7 +174,7 @@ h4 {
 }
 
 .icon {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: x-large;
 }
 
@@ -190,7 +187,7 @@ h4 {
     font-size: 55px;
   }
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   h3 {
     font-size: 35px;
@@ -217,6 +214,9 @@ h4 {
     padding: 0;
     margin: 0;
     max-width: fit-content;
+  }
+  .arrow {
+    font-size: 40px;
   }
   .navbar-brand {
     display: none;
