@@ -42,6 +42,11 @@ nav {
   background-position: center;
 }
 
+.navbar-collapse {
+  position: relative;
+  z-index: 1;
+}
+
 section,
 footer {
   padding-top: 100px;
@@ -62,6 +67,30 @@ footer {
 .greeting {
   position: relative;
   top: 20px;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
 }
 
 h1 {
@@ -194,13 +223,16 @@ h4 {
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 55px;
+    font-size: 35px;
   }
   h2 {
     font-size: 30px;
   }
   h3 {
     font-size: 35px;
+  }
+  .navbar-brand {
+    font-size: 20px;
   }
   .bg-image {
     background-attachment: scroll;
@@ -220,6 +252,12 @@ h4 {
   h3 {
     font-size: 30px;
   }
+  .navbar-brand {
+    font-size: 16px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
   .card {
     padding: 0;
     margin: 0;
@@ -227,9 +265,6 @@ h4 {
   }
   .arrow {
     font-size: 40px;
-  }
-  .navbar-brand {
-    display: none;
   }
   .email-link {
     font-size: 16px;
@@ -239,8 +274,8 @@ h4 {
   }
   .greeting {
     position: relative;
-    top: 200px;
-    width: 330px;
+    top: 170px;
+    width: 320px;
   }
   .img-thumbnail {
     max-width: 250px;
